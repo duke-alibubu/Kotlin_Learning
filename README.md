@@ -73,3 +73,11 @@ By default, the filter statement returns a new list.
   Constructors take less line of codes to write !
  - Primary constructors: part of the class header. The primary constructor doesn't have any block of codes, so if required, use the init keyword for the initializer.
  - Secondary constructors: MUST contain a call to the primary constructor using "this".
+ 
+ - By default, class/variables in Kotlin are final. If we want to override, needs to specify it as 'open'.
+ 
+ --------------------------------------------ABSTRACT CLASSES & INTERFACES--------------------------------------------------------------
+ - Abstract classes have constructor while interfaces do not have constructor logics. <<Only difference>>
+ - Polymorphism works similar to Java
+ - BOTH of them can have implementation of methods !!!!! (default implementation)
+ - Interface Delegation: Let you add features to a class via composition
