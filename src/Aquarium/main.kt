@@ -11,5 +11,19 @@ fun buildAquarium(){
 	myAquarium.volume = 100;
 	println(myAquarium.height);
 	
-	val fish = Fish(2);
+	makeFish();
+	
+}
+
+fun makeFish(){
+	val shark = Shark();
+	val pleco = Plecostomus();
+	println("Shark: ${shark.color} \nPlecostomus ${pleco.color}");
+	shark.eat();
+	pleco.eat();
+}
+
+fun feedFish(fish: FishAction){
+	//polymorphism
+	fish.eat();
 }
