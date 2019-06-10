@@ -80,4 +80,5 @@ By default, the filter statement returns a new list.
  - Abstract classes have constructor while interfaces do not have constructor logics. <<Only difference>>
  - Polymorphism works similar to Java
  - BOTH of them can have implementation of methods !!!!! (default implementation)
- - Interface Delegation: Let you add features to a class via composition
+ - "object" keyword: Allow a class to have ONLY one object declaration (similar to static class...)
+ - Interface Delegation: Let you add features to a class via composition. With the use of the "By" keyword -- implementing an interface by deferring all calls to the instances "By" refers to ... <Example in the commit "Interface Delegation">
