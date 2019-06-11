@@ -82,3 +82,7 @@ By default, the filter statement returns a new list.
  - BOTH of them can have implementation of methods !!!!! (default implementation)
  - "object" keyword: Allow a class to have ONLY one object declaration (similar to static class...)
  - Interface Delegation: Let you add features to a class via composition. With the use of the "By" keyword -- implementing an interface by deferring all calls to the instances "By" refers to ... <Example in the commit "Interface Delegation">
+  
+ ------------------------------------------------ DATA CLASSES -------------------------------------------------------------------------
+ - Declared using the keyword "data" before classes - aimed to hold data only.
+ - To get data class's properties and assign them to variables, use a process called "decomposition". Create variables, one for each property and assign the data object to it. <Example in the commit "Data Class"> 
