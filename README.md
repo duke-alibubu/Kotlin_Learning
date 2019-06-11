@@ -86,3 +86,6 @@ By default, the filter statement returns a new list.
  ------------------------------------------------ DATA CLASSES -------------------------------------------------------------------------
  - Declared using the keyword "data" before classes - aimed to hold data only.
  - To get data class's properties and assign them to variables, use a process called "decomposition". Create variables, one for each property and assign the data object to it. <Example in the commit "Data Class"> 
+-----------------------------------------SPECIAL PURPOSE CLASSES: OBJECT, ENUM, SEALED------------------------------------------------
+ - Enum actually defines a class and u can give them properties & methods. 
+ - Sealed class and only be inherited inside the file which it's declared.
