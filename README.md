@@ -43,6 +43,7 @@ when (a) {
 E.g: var decor : List<String> = listOf {//some strings}
     println(decor.filter{it[0]=='p'}) //check & print out the list elements that starts with letter 'p'. "it" here refers to itself
 By default, the filter statement returns a new list.
+  
   ----------------------------------------------------Lambda---------------------------------------------------------------------------
   - Lambda: In other languages, also called anonymous functions/function literals/etc...
   - An expression that makes a function. -- declare a function that has no name.
@@ -61,6 +62,7 @@ By default, the filter statement returns a new list.
    Function type notation is more readable, which reduces errors, clearly showing the what type is passed in and what type is returned.
              
              << I hate lambda and functional programming so I will just leave it here and come back whenever I need ... >>
+           
 --------------------------------------------------------CLASS---------------------------------------------------------------------------
 - One nice thing in Kotlin class attribute: Every attribute has a default getter that CAN BE OVERRIDEN (Example in code) that can be accessed by using: Object.Attribute (rather than Object.getAttribute()). The setter is accessed everytime u SET the attribute (even without directly call the setter func.)
 
@@ -86,6 +88,7 @@ By default, the filter statement returns a new list.
  ------------------------------------------------ DATA CLASSES -------------------------------------------------------------------------
  - Declared using the keyword "data" before classes - aimed to hold data only.
  - To get data class's properties and assign them to variables, use a process called "decomposition". Create variables, one for each property and assign the data object to it. <Example in the commit "Data Class"> 
+ 
 -----------------------------------------SPECIAL PURPOSE CLASSES: OBJECT, ENUM, SEALED------------------------------------------------
  - Enum actually defines a class and u can give them properties & methods. 
  - Sealed class and only be inherited inside the file which it's declared.
