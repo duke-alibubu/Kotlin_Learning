@@ -44,7 +44,7 @@ E.g: var decor : List<String> = listOf {//some strings}
     println(decor.filter{it[0]=='p'}) //check & print out the list elements that starts with letter 'p'. "it" here refers to itself
 By default, the filter statement returns a new list.
   
-  ----------------------------------------------------Lambda---------------------------------------------------------------------------
+----------------------------------------------------Lambda---------------------------------------------------------------------------
   - Lambda: In other languages, also called anonymous functions/function literals/etc...
   - An expression that makes a function. -- declare a function that has no name.
   Some examples of lambda expression:
@@ -89,6 +89,6 @@ By default, the filter statement returns a new list.
  - Declared using the keyword "data" before classes - aimed to hold data only.
  - To get data class's properties and assign them to variables, use a process called "decomposition". Create variables, one for each property and assign the data object to it. <Example in the commit "Data Class"> 
  
------------------------------------------SPECIAL PURPOSE CLASSES: OBJECT, ENUM, SEALED------------------------------------------------
+-----------------------------SPECIAL PURPOSE CLASSES: OBJECT, ENUM, SEALED------------------------------------------------
  - Enum actually defines a class and u can give them properties & methods. 
  - Sealed class and only be inherited inside the file which it's declared.
