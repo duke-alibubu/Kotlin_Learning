@@ -98,3 +98,9 @@ By default, the filter statement returns a new list.
  - Keyword "to" for creating a pair: E.g a to b => Pair<a,b> 
  - Map using mapOf ... is basically a list of pairs. Can have mutable map also.
  
+ -------------------------------------Extension functions----------------------------------------------------------------------
+ - E.g:
+                  << fun class.extenFunc() ..... {} >>
+ - Especially helpful to add functionalities to classes u do not own.
+ - Extension functions are resolved STATICALLY - at compile time. And the compiler, it just looks at the type of the variable. [So beware of Polymorphism when you are using extension functions!]
+ - Extension properties are available, too.
