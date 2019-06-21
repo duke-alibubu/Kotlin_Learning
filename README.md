@@ -100,7 +100,8 @@ By default, the filter statement returns a new list.
  
  -------------------------------------Extension functions----------------------------------------------------------------------
  - E.g:
-                  << fun class.extenFunc() ..... {} >>
+ 
+                   << fun class.extenFunc() ..... {} >>
  - Especially helpful to add functionalities to classes u do not own.
  - Extension functions are resolved STATICALLY - at compile time. And the compiler, it just looks at the type of the variable. [So beware of Polymorphism when you are using extension functions!]
  - Extension properties are available, too.
