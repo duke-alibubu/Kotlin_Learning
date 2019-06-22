@@ -105,3 +105,9 @@ By default, the filter statement returns a new list.
  - Especially helpful to add functionalities to classes u do not own.
  - Extension functions are resolved STATICALLY - at compile time. And the compiler, it just looks at the type of the variable. [So beware of Polymorphism when you are using extension functions!]
  - Extension properties are available, too.
+ 
+ -------------------------------------------------Generics----------------------------------------------------------------------
+ - E.g: 
+ class Aquarium<T>(...)
+ BY DEFAULT: T is set to be any NULLABLE type (a bit weird, isn't it)
+  To make the generic pass-in non-nullable: class Aquarium<T: Any>(...)
