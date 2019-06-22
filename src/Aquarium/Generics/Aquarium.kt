@@ -28,8 +28,10 @@ class Aquarium<out T: WaterSupply>(val waterSupply: T)
 		if (waterSupply.needsProcessed){
 			cleaner.clean(waterSupply);
 		}
-		println("adding water from $waterSupply");
+		println("adding water from ${waterSupply}");
 	}
+	
+	inline fun <reified R: WaterSupply> hasWaterSupplyOfType() = waterSupply is R;
 }           
 
 fun addItemTo(aquarium: Aquarium<WaterSupply>) = println("Out type received");
@@ -55,4 +57,12 @@ fun main(args: Array<String>){
 	aquarium.addWater(cleaner);
 	addItemTo(aquarium);
 	
+	aquarium.hasWaterSupplyOfType<TapWater>();
+}
+
+inline fun <reified R: WaterSupply> Aquarium<*>.hasWhatTypeofWaterSupply() = waterSupply is R;
+
+fun <T: WaterSupply> isWaterClean(aquarium: Aquarium<T>)
+{
+	println("aquarium water is clean: ${aquarium.waterSupply.needsProcessed}");
 }
