@@ -111,3 +111,9 @@ By default, the filter statement returns a new list.
  class Aquarium<T>(...)
  BY DEFAULT: T is set to be any NULLABLE type (a bit weird, isn't it)
   To make the generic pass-in non-nullable: class Aquarium<T: Any>(...)
+  
+  GENERICS OUT & IN
+- If we want to pass a generic as a function param, needs to mark the class as "OUT".
+- IN type can only be passed into an object. OUT type can only be passed out of an object or returned.
+- OUT type can be used as return value and IN type can be used as parameters.
+- OUT type may also be used as a pass-in param for a global function?
