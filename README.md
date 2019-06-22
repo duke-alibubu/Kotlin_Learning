@@ -117,3 +117,7 @@ By default, the filter statement returns a new list.
 - IN type can only be passed into an object. OUT type can only be passed out of an object or returned.
 - OUT type can be used as return value and IN type can be used as parameters.
 - OUT type may also be used as a pass-in param for a global function?
+
+  GENERIC FUNCTIONS
+ - For a generic method within a class that use checks, u need to use "inline" and "reified". Non-reified type are only available at compile time, but can't be used at runtime by the program. 
+ - The asterisk * means it would accept any type passed into the generic.
