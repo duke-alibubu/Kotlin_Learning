@@ -29,7 +29,24 @@ class TowerTank(): Aquarium(){
 	override var volume: Int
 		get() = (width * height * length * PI/ 1000).toInt();
 		set(value){
-			height = (value * 1000) / (width * length)
+			height = (value * 1000) / (width * length);
 		}
+}
+
+fun main(args: Array<String>)
+{
+	val symptoms: MutableList<String> = mutableListOf("pain","white spots");
 	
+	print(symptoms.sumBy{it.length}) ;
+	
+	val cures: MutableMap<String,String> = mutableMapOf("HIV" to "no cures", "Cancer" to "Death");
+	cures.put("tank scrubber", "con cac");
+}
+
+class MyClass
+{
+	companion object
+	{
+		const val CONST3 : String = "const inside object";
+	}
 }
