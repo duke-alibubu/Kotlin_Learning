@@ -22,19 +22,37 @@ class LakeWater: WaterSupply(true)
 }
 
 //generic class of type WaterSupply
-class Aquarium<T: WaterSupply>(val waterSupply: T)
+class Aquarium<out T: WaterSupply>(val waterSupply: T)
 {
-	fun addWater(){
-		check(!waterSupply.needsProcessed) {"water supply need processed!";}
+	fun addWater(cleaner: Cleaner<T>){
+		if (waterSupply.needsProcessed){
+			cleaner.clean(waterSupply);
+		}
 		println("adding water from $waterSupply");
 	}
 }           
 
+fun addItemTo(aquarium: Aquarium<WaterSupply>) = println("Out type received");
+
+interface Cleaner<in T: WaterSupply>
+{
+	fun clean(waterSupply: T);
+}
+
+class TapWaterCleaner: Cleaner<TapWater>
+{
+	override fun clean(waterSupply: TapWater){
+		waterSupply.addChemicalCleaners();
+	}
+}
 fun main(args: Array<String>){
 	val aquarium : Aquarium<TapWater> = Aquarium(TapWater());    //type inference
 	aquarium.waterSupply.addChemicalCleaners();
 	
 	val aquar4: Aquarium<LakeWater> = Aquarium(LakeWater());
 	aquar4.waterSupply.filter();
-	aquar4.addWater();
+	val cleaner:TapWaterCleaner = TapWaterCleaner();
+	aquarium.addWater(cleaner);
+	addItemTo(aquarium);
+	
 }
