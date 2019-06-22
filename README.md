@@ -121,3 +121,11 @@ By default, the filter statement returns a new list.
   GENERIC FUNCTIONS
  - For a generic method within a class that use checks, u need to use "inline" and "reified". Non-reified type are only available at compile time, but can't be used at runtime by the program. 
  - The asterisk * means it would accept any type passed into the generic.
+ 
+ 
+------------------------------------------------MORE ABOUT LAMBDAS--------------------------------------------------------------
+Time to get into more advanced topics of Kotlin: lambda.
+
+- Usually, when a higher-order func is called, a new lambda obj will be created, creating overhead.
+So, we can specify that H-O func as inline.A promise that everytime myWith is called, it will actually transform the source code to inLine, the function. That is, the compiler will change the code to replace the Lambda with the instructions inside the Lambda --> zero overhead.
+- Without 'inline', an object is created every time with every call. With 'inline', the call to Lambda is replaced with the contents of the function body of the Lambda; so no object is created. 
