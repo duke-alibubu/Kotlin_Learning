@@ -129,3 +129,6 @@ Time to get into more advanced topics of Kotlin: lambda.
 - Usually, when a higher-order func is called, a new lambda obj will be created, creating overhead.
 So, we can specify that H-O func as inline.A promise that everytime myWith is called, it will actually transform the source code to inLine, the function. That is, the compiler will change the code to replace the Lambda with the instructions inside the Lambda --> zero overhead.
 - Without 'inline', an object is created every time with every call. With 'inline', the call to Lambda is replaced with the contents of the function body of the Lambda; so no object is created. 
+
+      << I regret what I said earlier, functional programming and lambda are so strong. >>
+      << Damn sure that I will dig more into generic programming& lambda in the future. >>
