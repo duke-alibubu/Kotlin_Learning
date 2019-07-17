@@ -121,8 +121,10 @@ By default, the filter statement returns a new list.
   GENERIC FUNCTIONS
  - For a generic method within a class that use checks, u need to use "inline" and "reified". Non-reified type are only available at compile time, but can't be used at runtime by the program. 
  - The asterisk * means it would accept any type passed into the generic.
- 
- 
+
+### The !! operator
+- the Non-null assertion operator ```!!``` converts any value to a non-null type and throws an exception if the value is null. We can write ```b!!```, and this will return a non-null value of b (e.g., a String in our example) or throw an NPE if b is null
+
 ### MORE ABOUT LAMBDAS
 Time to get into more advanced topics of Kotlin: lambda.
 
